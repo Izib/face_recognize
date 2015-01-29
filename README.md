@@ -1,3 +1,3 @@
-train.sh group 抓取一张摄像头图像，学习训练放入group中
+train.sh name 抓取一张命名为[name]的图像，训练成功后放入test group
 
 recog.sh  抓取图像，进行识别
