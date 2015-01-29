@@ -84,6 +84,6 @@ Enjoy!
 
 if __name__ == '__main__':
     print "python cmdtools.py group_name img_path"
-    print api.recognition.identify(group_name = sys.argv[1], img = File(sys.argv[2]))
-
+    rst = api.recognition.identify(group_name = sys.argv[1], img = File(sys.argv[2]))
+    print 'The person is:', rst['face'][0]['candidate'][0]['person_name']
 #_run()
